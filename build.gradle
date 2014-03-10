@@ -1,0 +1,26 @@
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'jetty'
+
+repositories {
+   mavenCentral()
+}
+
+
+dependencies {
+	//groovy
+	compile 'org.codehaus.groovy:groovy-all:2.2.2'
+
+	//spring
+	compile 'org.springframework:spring-context:4.0.2.RELEASE'
+
+	compile 'org.springframework:spring-web:4.0.2.RELEASE'
+
+	compile 'org.springframework:spring-webmvc:4.0.2.RELEASE'
+
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+
+}
